@@ -1,0 +1,36 @@
+PS C:\Users\Aolin\Documents\workspace\project2> git init
+Initialized empty Git repository in C:/Users/Aolin/Documents/workspace/project2/.git/
+PS C:\Users\Aolin\Documents\workspace\project2> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Aolin\Documents\workspace\project2> git add .
+PS C:\Users\Aolin\Documents\workspace\project2> git commit -m 'first commit'
+[master (root-commit) a599624] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 src/testfile.txt
+PS C:\Users\Aolin\Documents\workspace\project2> git log
+commit a599624af53b7a75600fd3ae166af2153a49b66c (HEAD -> master)
+Author: Aolin Yang <yangal321@gmail.com>
+Date:   Tue Aug 18 16:02:51 2020 -0700
+
+    first commit
+PS C:\Users\Aolin\Documents\workspace\project2> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\Aolin\Documents\workspace\project2> git remote add origin https://github.com/AolinHaHa/secondrepo.git
+PS C:\Users\Aolin\Documents\workspace\project2> git push --set-upstream origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 255 bytes | 255.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/AolinHaHa/secondrepo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
